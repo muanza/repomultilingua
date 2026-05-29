@@ -17,7 +17,7 @@ public class FacturaEntity {
     @Column(name = "cliente_id", nullable = false)
     private Long clienteId;
 
-    @Column(name = "cliente_nome", nullable = false)
+    @Transient
     private String clienteNome;
 
     @Column(nullable = false)
