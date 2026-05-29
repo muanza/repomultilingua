@@ -1,1 +1,25 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><body><h2>Relatórios de Vendas</h2></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Relatórios de Vendas</title></h:head>
+<h:body>
+    <h2>Relatórios de Vendas</h2>
+    <h:outputText value="Volume do período: #{relatorioVendasBean.totalPeriodo}" />
+
+    <h:dataTable value="#{relatorioVendasBean.resumoDiario}" var="linha" border="1">
+        <h:column>
+            <f:facet name="header">Data</f:facet>
+            #{linha.data}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Facturas</f:facet>
+            #{linha.totalFacturas}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Valor total</f:facet>
+            #{linha.valorTotal}
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>

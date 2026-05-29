@@ -1,1 +1,36 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><body><h2>Gestão de Licenças</h2></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Gestão de Licenças</title></h:head>
+<h:body>
+    <h2>Gestão de Licenças</h2>
+
+    <h:dataTable value="#{licencaGestaoBean.licencas}" var="licenca" border="1">
+        <h:column>
+            <f:facet name="header">Tenant</f:facet>
+            #{licenca.tenantCodigo}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Plano</f:facet>
+            #{licenca.plano}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Estado</f:facet>
+            #{licenca.estado}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Validade</f:facet>
+            #{licenca.validade}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Limite diário</f:facet>
+            #{licenca.limiteFacturasDia}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Chave</f:facet>
+            #{licenca.chaveMascarada}
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>

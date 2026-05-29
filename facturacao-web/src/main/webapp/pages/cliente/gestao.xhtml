@@ -1,1 +1,29 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><body><h2>Gestão de Clientes</h2></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Gestão de Clientes</title></h:head>
+<h:body>
+    <h2>Gestão de Clientes</h2>
+    <h:outputText value="Total registado: #{clienteGestaoBean.totalClientes}" />
+
+    <h:dataTable value="#{clienteGestaoBean.clientes}" var="cliente" border="1">
+        <h:column>
+            <f:facet name="header">Nome</f:facet>
+            #{cliente.nome}
+        </h:column>
+        <h:column>
+            <f:facet name="header">NIF</f:facet>
+            #{cliente.nif}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Email</f:facet>
+            #{cliente.email}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Localidade</f:facet>
+            #{cliente.localidade}
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>

@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head><title>CRM Dashboard</title></h:head>
 <h:body>
     <h2>#{crmDashboardBean.titulo}</h2>
+
+    <h:panelGrid columns="2">
+        <h:outputText value="Total de licenças" />
+        <h:outputText value="#{crmDashboardBean.totalLicencas}" />
+        <h:outputText value="Licenças válidas" />
+        <h:outputText value="#{crmDashboardBean.licencasValidas}" />
+        <h:outputText value="A expirar em 30 dias" />
+        <h:outputText value="#{crmDashboardBean.licencasAExpirar}" />
+    </h:panelGrid>
+
+    <h3>Alertas comerciais</h3>
+    <h:dataTable value="#{crmDashboardBean.alertas}" var="alerta" border="1">
+        <h:column>
+            <f:facet name="header">Alerta</f:facet>
+            #{alerta}
+        </h:column>
+    </h:dataTable>
 </h:body>
 </html>

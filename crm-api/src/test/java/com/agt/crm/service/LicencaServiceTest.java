@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LicencaServiceTest {
@@ -14,21 +15,32 @@ class LicencaServiceTest {
     private LicencaService service;
 
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp() {
         service = new LicencaService();
         LicencaRepository repository = new LicencaRepository();
         LicencaEntity entity = new LicencaEntity();
+        entity.setTenantCodigo("TENANT-TESTE");
+        entity.setTenantId(99L);
+        entity.setPlano("AGT-PRO");
         entity.setEstado("ATIVA");
         entity.setValidade(LocalDate.now().plusDays(10));
-        repository.save("TENANT-001", entity);
-
-        var field = LicencaService.class.getDeclaredField("licencaRepository");
-        field.setAccessible(true);
-        field.set(service, repository);
+        entity.setLimiteFacturasDia(500);
+        entity.setChave("LIC-TESTE");
+        repository.save(entity);
+        service.setLicencaRepository(repository);
     }
 
     @Test
     void deveValidarLicencaAtiva() {
-        assertTrue(service.licencaValida("TENANT-001"));
+        assertTrue(service.licencaValida("TENANT-TESTE"));
+    }
+
+    @Test
+    void deveRetornarResumoDaLicenca() {
+        var dto = service.consultar("TENANT-TESTE");
+
+        assertEquals("AGT-PRO", dto.getPlano());
+        assertEquals(500, dto.getLimiteFacturasDia());
+        assertTrue(dto.isValida());
     }
 }

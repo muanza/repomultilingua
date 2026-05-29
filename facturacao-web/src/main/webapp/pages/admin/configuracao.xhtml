@@ -1,1 +1,37 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><body><h2>Administração Facturação</h2></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Administração Facturação</title></h:head>
+<h:body>
+    <h2>Administração Facturação</h2>
+
+    <h3>Configurações activas</h3>
+    <h:dataTable value="#{facturacaoAdminBean.configuracoes}" var="item" border="1">
+        <h:column>
+            <f:facet name="header">Parâmetro</f:facet>
+            #{item.parametro}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Valor</f:facet>
+            #{item.valor}
+        </h:column>
+    </h:dataTable>
+
+    <h3>Backups incrementais</h3>
+    <h:dataTable value="#{facturacaoAdminBean.backupsAgendados}" var="backup" border="1">
+        <h:column>
+            <f:facet name="header">Execução agendada</f:facet>
+            #{backup}
+        </h:column>
+    </h:dataTable>
+
+    <h3>Alertas operacionais</h3>
+    <h:dataTable value="#{facturacaoAdminBean.alertas}" var="alerta" border="1">
+        <h:column>
+            <f:facet name="header">Alerta</f:facet>
+            #{alerta}
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>

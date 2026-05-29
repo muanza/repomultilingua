@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head><title>Dashboard Facturação</title></h:head>
 <h:body>
     <h2>Dashboard Facturação</h2>
-    <h:form>
-        <h:outputLabel value="Idioma" />
-        <h:inputText value="#{facturaBean.idioma}" />
-    </h:form>
     <h:panelGrid columns="2">
+        <h:outputText value="Idioma seleccionado" />
+        <h:outputText value="#{facturaBean.idioma}" />
+        <h:outputText value="Idiomas disponíveis" />
+        <h:outputText value="#{facturaBean.idiomasDisponiveis}" />
+        <h:outputText value="Total do período" />
+        <h:outputText value="#{facturaBean.totalDoPeriodo}" />
+    </h:panelGrid>
+
+    <h3>Legenda activa</h3>
+    <h:panelGrid columns="2">
+        <h:outputText value="Cliente" />
         <h:outputText value="#{facturaBean.legendas['cliente']}" />
+        <h:outputText value="Número" />
         <h:outputText value="#{facturaBean.legendas['numero']}" />
+        <h:outputText value="Data" />
         <h:outputText value="#{facturaBean.legendas['data']}" />
+        <h:outputText value="Total" />
         <h:outputText value="#{facturaBean.legendas['total']}" />
     </h:panelGrid>
+
+    <h3>Facturas recentes</h3>
+    <h:dataTable value="#{facturaBean.facturasRecentes}" var="factura" border="1">
+        <h:column>
+            <f:facet name="header">Número</f:facet>
+            #{factura.numero}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Cliente</f:facet>
+            #{factura.cliente}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Data</f:facet>
+            #{factura.data}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Estado</f:facet>
+            #{factura.estado}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Total</f:facet>
+            #{factura.total}
+        </h:column>
+    </h:dataTable>
 </h:body>
 </html>
