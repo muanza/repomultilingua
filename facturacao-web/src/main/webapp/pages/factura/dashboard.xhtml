@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Dashboard Facturação</title></h:head>
+<h:body>
+    <h2>Dashboard Facturação</h2>
+    <h:form>
+        <h:outputLabel value="Idioma" />
+        <h:inputText value="#{facturaBean.idioma}" />
+    </h:form>
+    <h:panelGrid columns="2">
+        <h:outputText value="#{facturaBean.legendas['cliente']}" />
+        <h:outputText value="#{facturaBean.legendas['numero']}" />
+        <h:outputText value="#{facturaBean.legendas['data']}" />
+        <h:outputText value="#{facturaBean.legendas['total']}" />
+    </h:panelGrid>
+</h:body>
+</html>

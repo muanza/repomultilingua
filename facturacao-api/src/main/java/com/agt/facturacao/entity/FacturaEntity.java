@@ -1,0 +1,40 @@
+package com.agt.facturacao.entity;
+
+import javax.persistence.*;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "factura")
+public class FacturaEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "tenant_id", nullable = false)
+    private Long tenantId;
+
+    @Column(nullable = false)
+    private String numero;
+
+    @Column(name = "data_emissao", nullable = false)
+    private LocalDate dataEmissao;
+
+    @Column(nullable = false)
+    private String idioma;
+
+    @Column(nullable = false)
+    private BigDecimal total;
+
+    public Long getId() { return id; }
+    public Long getTenantId() { return tenantId; }
+    public void setTenantId(Long tenantId) { this.tenantId = tenantId; }
+    public String getNumero() { return numero; }
+    public void setNumero(String numero) { this.numero = numero; }
+    public LocalDate getDataEmissao() { return dataEmissao; }
+    public void setDataEmissao(LocalDate dataEmissao) { this.dataEmissao = dataEmissao; }
+    public String getIdioma() { return idioma; }
+    public void setIdioma(String idioma) { this.idioma = idioma; }
+    public BigDecimal getTotal() { return total; }
+    public void setTotal(BigDecimal total) { this.total = total; }
+}
