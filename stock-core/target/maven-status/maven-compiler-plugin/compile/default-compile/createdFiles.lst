@@ -1,0 +1,10 @@
+ao/agt/stock/core/service/StockService.class
+ao/agt/stock/core/entity/ArmazemEntity.class
+ao/agt/stock/core/entity/LoteProdutoEntity.class
+ao/agt/stock/core/entity/MovimentacaoStockEntity.class
+ao/agt/stock/core/entity/LocalizacaoArmazemEntity.class
+ao/agt/stock/core/service/MovimentacaoStockService.class
+ao/agt/stock/core/service/RelatorioStockService.class
+ao/agt/stock/core/service/AlertaStockService.class
+ao/agt/stock/core/service/ArmazemService.class
+ao/agt/stock/core/entity/ProdutoStockEntity.class

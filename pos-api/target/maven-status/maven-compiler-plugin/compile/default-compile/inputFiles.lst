@@ -1,0 +1,8 @@
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/controller/CaixaController.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/controller/TerminalPosController.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/controller/VendaPosController.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/dto/CaixaDTO.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/dto/ItemVendaPosDTO.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/dto/ReciboPosDTO.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/dto/RelatorioVendasPosDTO.java
+/tmp/workspace/muanza/repomultilingua/pos-api/src/main/java/ao/agt/pos/api/dto/VendaPosDTO.java

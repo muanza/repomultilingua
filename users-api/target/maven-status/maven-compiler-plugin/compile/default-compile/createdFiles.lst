@@ -1,0 +1,8 @@
+ao/agt/users/api/controller/AutenticacaoController.class
+ao/agt/users/api/dto/AuditoriaUsuarioDTO.class
+ao/agt/users/api/controller/UtilizadorController.class
+ao/agt/users/api/controller/PerfilUsuarioController.class
+ao/agt/users/api/dto/PerfilUsuarioDTO.class
+ao/agt/users/api/dto/UtilizadorDTO.class
+ao/agt/users/api/dto/PermissaoDTO.class
+ao/agt/users/api/controller/PermissaoController.class

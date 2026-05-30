@@ -1,0 +1,12 @@
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/controller/BannerPublicidadeController.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/controller/LicencaMelhoradaController.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/dto/BannerPublicidadeDTO.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/dto/LicencaMelhoradaDTO.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/dto/TenantUtilizacaoDTO.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/entity/BannerPublicidadeEntity.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/entity/BannerVisualizacaoEntity.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/entity/LicencaMelhoradaEntity.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/entity/TenantUtilizacaoEntity.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/service/BannerPublicidadeService.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/service/IntegracaoCRMFacturacao.java
+/tmp/workspace/muanza/repomultilingua/crm-api/src/main/java/ao/agt/crm/api/service/LicencaMelhoradaService.java

@@ -1,0 +1,10 @@
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/entity/CaixaEntity.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/entity/ItemVendaPosEntity.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/entity/MovimentoCaixaEntity.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/entity/TerminalPosEntity.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/entity/VendaPosEntity.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/service/CaixaService.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/service/IntegracaoFaturaService.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/service/RelatorioVendasPosService.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/service/TerminalPosService.java
+/tmp/workspace/muanza/repomultilingua/pos-core/src/main/java/ao/agt/pos/core/service/VendaPosService.java
