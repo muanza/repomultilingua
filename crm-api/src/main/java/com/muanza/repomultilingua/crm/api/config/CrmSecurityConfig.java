@@ -2,6 +2,7 @@ package com.muanza.repomultilingua.crm.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -14,16 +15,22 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 import com.muanza.repomultilingua.crm.api.security.JwtAuthenticationFilter;
 import com.muanza.repomultilingua.crm.api.security.JwtService;
 
 @Configuration
 public class CrmSecurityConfig {
+    @Value("${security.jwt.secret}")
+    private String jwtSecret;
 
     @Bean
     SecurityFilterChain crmSecurityFilterChain(HttpSecurity http, JwtAuthenticationFilter jwtAuthenticationFilter) throws Exception {
-        http.csrf().disable()
+        http.csrf()
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .ignoringAntMatchers("/api/v1/auth/login")
+                .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeHttpRequests(authorize -> authorize
@@ -56,7 +63,7 @@ public class CrmSecurityConfig {
 
     @Bean
     JwtService crmJwtService() {
-        return new JwtService("crm-agt-chave-secreta-2026-segura");
+        return new JwtService(jwtSecret);
     }
 
     @Bean
@@ -64,4 +71,3 @@ public class CrmSecurityConfig {
         return new JwtAuthenticationFilter(crmJwtService, crmUserDetailsService);
     }
 }
-

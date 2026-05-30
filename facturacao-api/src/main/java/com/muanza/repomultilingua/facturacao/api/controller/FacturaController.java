@@ -80,9 +80,11 @@ public class FacturaController {
 
     private Fatura processar(Fatura fatura) {
         Cliente cliente = clienteStore.get(fatura.getClienteId());
+        if (cliente == null) {
+            throw new IllegalArgumentException("Cliente não encontrado para a factura informada.");
+        }
         Empresa empresa = new Empresa();
         empresa.setId(fatura.getEmpresaId());
         return faturaService.emitir(empresa, cliente, fatura);
     }
 }
-
