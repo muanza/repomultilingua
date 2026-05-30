@@ -1,0 +1,8 @@
+ao/agt/pos/api/controller/VendaPosController.class
+ao/agt/pos/api/controller/CaixaController.class
+ao/agt/pos/api/dto/VendaPosDTO.class
+ao/agt/pos/api/dto/ReciboPosDTO.class
+ao/agt/pos/api/dto/RelatorioVendasPosDTO.class
+ao/agt/pos/api/dto/ItemVendaPosDTO.class
+ao/agt/pos/api/dto/CaixaDTO.class
+ao/agt/pos/api/controller/TerminalPosController.class

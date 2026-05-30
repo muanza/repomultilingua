@@ -1,0 +1,10 @@
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/entity/ArmazemEntity.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/entity/LocalizacaoArmazemEntity.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/entity/LoteProdutoEntity.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/entity/MovimentacaoStockEntity.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/entity/ProdutoStockEntity.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/service/AlertaStockService.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/service/ArmazemService.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/service/MovimentacaoStockService.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/service/RelatorioStockService.java
+/tmp/workspace/muanza/repomultilingua/stock-core/src/main/java/ao/agt/stock/core/service/StockService.java

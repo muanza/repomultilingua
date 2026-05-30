@@ -1,0 +1,12 @@
+ao/agt/crm/api/controller/LicencaMelhoradaController.class
+ao/agt/crm/api/dto/LicencaMelhoradaDTO.class
+ao/agt/crm/api/controller/BannerPublicidadeController.class
+ao/agt/crm/api/service/BannerPublicidadeService.class
+ao/agt/crm/api/service/LicencaMelhoradaService.class
+ao/agt/crm/api/entity/BannerVisualizacaoEntity.class
+ao/agt/crm/api/dto/TenantUtilizacaoDTO.class
+ao/agt/crm/api/dto/BannerPublicidadeDTO.class
+ao/agt/crm/api/service/IntegracaoCRMFacturacao.class
+ao/agt/crm/api/entity/BannerPublicidadeEntity.class
+ao/agt/crm/api/entity/LicencaMelhoradaEntity.class
+ao/agt/crm/api/entity/TenantUtilizacaoEntity.class

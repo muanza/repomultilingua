@@ -1,0 +1,10 @@
+ao/agt/pos/core/entity/MovimentoCaixaEntity.class
+ao/agt/pos/core/entity/CaixaEntity.class
+ao/agt/pos/core/service/VendaPosService.class
+ao/agt/pos/core/entity/TerminalPosEntity.class
+ao/agt/pos/core/entity/VendaPosEntity.class
+ao/agt/pos/core/service/RelatorioVendasPosService.class
+ao/agt/pos/core/service/CaixaService.class
+ao/agt/pos/core/service/IntegracaoFaturaService.class
+ao/agt/pos/core/service/TerminalPosService.class
+ao/agt/pos/core/entity/ItemVendaPosEntity.class

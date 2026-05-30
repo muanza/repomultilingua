@@ -1,0 +1,7 @@
+ao/agt/stock/api/dto/RelatorioStockDTO.class
+ao/agt/stock/api/dto/AlertaStockBaixoDTO.class
+ao/agt/stock/api/dto/ProdutoStockDTO.class
+ao/agt/stock/api/controller/StockController.class
+ao/agt/stock/api/controller/ArmazemController.class
+ao/agt/stock/api/controller/MovimentacaoStockController.class
+ao/agt/stock/api/dto/MovimentacaoStockDTO.class

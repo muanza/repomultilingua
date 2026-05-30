@@ -1,0 +1,7 @@
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/controller/ArmazemController.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/controller/MovimentacaoStockController.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/controller/StockController.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/dto/AlertaStockBaixoDTO.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/dto/MovimentacaoStockDTO.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/dto/ProdutoStockDTO.java
+/tmp/workspace/muanza/repomultilingua/stock-api/src/main/java/ao/agt/stock/api/dto/RelatorioStockDTO.java

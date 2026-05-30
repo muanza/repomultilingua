@@ -1,0 +1,9 @@
+ao/agt/users/core/service/UtilizadorService.class
+ao/agt/users/core/entity/UtilizadorEntity.class
+ao/agt/users/core/service/AuditoriaUsuarioService.class
+ao/agt/users/core/entity/AuditoriaUsuarioEntity.class
+ao/agt/users/core/service/PerfilUsuarioService.class
+ao/agt/users/core/service/PermissaoService.class
+ao/agt/users/core/service/AutenticacaoService.class
+ao/agt/users/core/entity/PermissaoEntity.class
+ao/agt/users/core/entity/PerfilUsuarioEntity.class

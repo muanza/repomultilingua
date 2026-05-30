@@ -1,0 +1,8 @@
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/controller/AutenticacaoController.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/controller/PerfilUsuarioController.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/controller/PermissaoController.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/controller/UtilizadorController.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/dto/AuditoriaUsuarioDTO.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/dto/PerfilUsuarioDTO.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/dto/PermissaoDTO.java
+/tmp/workspace/muanza/repomultilingua/users-api/src/main/java/ao/agt/users/api/dto/UtilizadorDTO.java
